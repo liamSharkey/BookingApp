@@ -1,0 +1,10 @@
+.nav-text{
+    color: white;
+
+}
+
+.column{
+    display: "flex";
+      justify-content: "center";
+      background-color: "aqua";
+  }
