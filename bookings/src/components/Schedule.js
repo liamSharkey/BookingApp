@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import TimeSlot from "./TimeSlot";
 import "./Components.css";
-import {Row, Col} from "react-bootstrap";
+import {Row, Col, Card} from "react-bootstrap";
 
 export default function Schedule(props) {
 	const [hours, updateHours] = useState(0);
@@ -39,14 +39,14 @@ export default function Schedule(props) {
 	}
 
 	return (
-		<div>
+		<Card className="py-3">
+			<h3>Total Hours Booked: {hours}</h3>
+			<h5>Price: {getPrice(hours, props.date)}</h5>
 			<Row>
 				<Col>{timeSlots.slice(0, 8)}</Col>
 				<Col>{timeSlots.slice(8, 16)}</Col>
 				<Col>{timeSlots.slice(16, 24)}</Col>
 			</Row>
-			<h3>Total Hours Booked: {hours}</h3>
-			<h5>Price: {getPrice(hours, props.date)}</h5>
-		</div>
+		</Card>
 	);
 }

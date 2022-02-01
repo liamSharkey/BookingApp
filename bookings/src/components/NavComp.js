@@ -4,7 +4,7 @@ import "./Components.css";
 
 export default function NavComp() {
 	return (
-		<Navbar bg="primary">
+		<Navbar className="py-3" style={{backgroundColor: "aqua"}}>
 			<Container>
 				<Navbar.Brand href="#home">Bookings</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -9,7 +9,6 @@ export class TimeSlot extends Component {
 	}
 
 	toggleColor() {
-		// console.log(this.props.time);
 		if (this.state.color == "light") {
 			this.setState({color: "primary"}, () => console.log(this.state.color));
 			this.props.onChange("increment");

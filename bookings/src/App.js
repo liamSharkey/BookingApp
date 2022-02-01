@@ -28,12 +28,11 @@ export class App extends Component {
 						<Col
 							className="py-5"
 							style={{
-								justifyContent: "center",
-								backgroundColor: "aqua"
+								justifyContent: "center"
 							}}
 						>
 							<Calendar
-								className="mx-auto"
+								className="mx-auto mt-5"
 								onClickDay={(value, event) => this.setDate(value)}
 							></Calendar>
 						</Col>
@@ -41,12 +40,11 @@ export class App extends Component {
 						<Col
 							className="py-5"
 							style={{
-								backgroundColor: "pink",
 								textAlign: "center"
 							}}
 						>
-							<p>{this.state.currentDate.toString()}</p>
 							<Schedule date={this.state.currentDate.toString()}></Schedule>
+							<p className="mt-3">{this.state.currentDate.toString()}</p>
 						</Col>
 					</Row>
 				</Container>
