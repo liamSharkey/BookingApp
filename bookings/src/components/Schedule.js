@@ -1,10 +1,13 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import TimeSlot from "./TimeSlot";
 import "./Components.css";
 import {Row, Col, Card} from "react-bootstrap";
 
 export default function Schedule(props) {
 	const [hours, updateHours] = useState(0);
+	console.log(props.bookings);
+
+	useEffect(() => updateHours(0), [props.date]);
 
 	function changeHours(change) {
 		if (change == "increment") {
@@ -30,9 +33,15 @@ export default function Schedule(props) {
 
 	let timeSlots = [];
 	for (let i = 0; i < 24; i++) {
+		let booked = false;
+		if (props.bookings.includes(i + ":00")) {
+			booked = true;
+		}
 		timeSlots.push(
 			<TimeSlot
 				time={i + ":00"}
+				booked={booked}
+				date={props.date}
 				onChange={(change) => changeHours(change)}
 			></TimeSlot>
 		);
