@@ -16,27 +16,26 @@ export class TimeSlot extends Component {
 
 	chooseColor() {
 		if (this.props.booked == true) {
-			this.setState({color: "danger"}, () => console.log(this.state.color));
+			this.setState({color: "danger"});
 		} else {
-			this.setState({color: "light"}, () => console.log(this.state.color));
+			this.setState({color: "light"});
 		}
 	}
 
 	changeColor() {
 		if (this.props.booked == true) {
-			this.setState({color: "danger"}, () => console.log(this.state.color));
+			this.setState({color: "danger"});
 		} else if (this.state.color === "light") {
-			this.setState({color: "primary"}, () => console.log(this.state.color));
-			this.props.onChange("increment");
+			this.setState({color: "primary"});
+			this.props.onChange(["increment", this.props.time]);
 		} else {
-			this.setState({color: "light"}, () => console.log(this.state.color));
-			this.props.onChange("decrement");
+			this.setState({color: "light"});
+			this.props.onChange(["decrement", this.props.time]);
 		}
 	}
 
 	render() {
 		const {time} = this.props;
-		console.log(this.props.booking);
 		return (
 			<Card
 				bg={this.state.color}

@@ -1,0 +1,64 @@
+{
+  "Bookings": [
+    {
+      "date": "Wed Feb 16 2022 00:00:00 GMT-0500 (Eastern Standard Time)",
+      "hours": [
+        "8:00",
+        "6:00",
+        "21:00"
+      ],
+      "id": "2"
+    },
+    {
+      "date": "Fri Feb 11 2022 00:00:00 GMT-0500 (Eastern Standard Time)",
+      "hours": [
+        "8:00",
+        "9:00",
+        "10:00",
+        "11:00",
+        "12:00"
+      ],
+      "id": "o3MzzbG"
+    },
+    {
+      "date": "Thu Feb 17 2022 00:00:00 GMT-0500 (Eastern Standard Time)",
+      "hours": [
+        "0:00",
+        "1:00",
+        "2:00"
+      ],
+      "id": "9Dn-kOF"
+    },
+    {
+      "date": "Sat Feb 19 2022 00:00:00 GMT-0500 (Eastern Standard Time)",
+      "hours": [
+        "0:00",
+        "1:00",
+        "2:00"
+      ],
+      "id": "z3pSbA0"
+    },
+    {
+      "date": "Fri Feb 18 2022 00:00:00 GMT-0500 (Eastern Standard Time)",
+      "hours": [
+        "1:00",
+        "2:00",
+        "23:00",
+        "3:00",
+        "4:00",
+        "5:00",
+        "6:00",
+        "7:00"
+      ],
+      "id": "LElN4rl"
+    },
+    {
+      "date": "Tue Feb 15 2022 00:00:00 GMT-0500 (Eastern Standard Time)",
+      "hours": [
+        "0:00",
+        "1:00"
+      ],
+      "id": "veiXfE1"
+    }
+  ]
+}
